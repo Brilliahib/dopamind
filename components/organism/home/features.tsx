@@ -14,7 +14,7 @@ export default function Features() {
           What are our features 👀?
         </h1>
         <div
-          className="relative container rounded-3xl mx-auto p-12 md:py-24 bg-cover bg-center border"
+          className="relative container rounded-3xl mx-auto p-8 md:py-24 bg-cover bg-center border"
           style={{
             backgroundImage: `url(${features.src})`,
             backgroundSize: "cover",
@@ -22,7 +22,7 @@ export default function Features() {
             backgroundPosition: "center",
           }}
         >
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 md:gap-10 grid-cols-1 gap-8">
             <div className="bg-white rounded-md shadow-lg space-y-4 p-6">
               <div className="flex items-center space-x-4">
                 <SquareUserRound className="w-10 h-10 text-blue-500" />

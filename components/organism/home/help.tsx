@@ -3,9 +3,9 @@ export default function Help() {
   return (
     <>
       <div className="pad-x">
-        <div className="flex flex-col md:flex-row bg-[#C7E4DF]/50 lg:p-12 lg:py-24 md:py-10 py-10 md:p-16 p-4 rounded-3xl">
-          <div className="md:w-1/2 flex flex-col justify-center">
-            <h1 className="text-4xl lg:text-6xl font-bold tracking-tighter">
+        <div className="flex flex-col md:flex-row bg-[#C7E4DF]/50 lg:p-12 lg:py-24 md:py-10 py-10 md:p-16 p-8 rounded-3xl">
+          <div className="md:w-1/2 flex flex-col justify-center md:mb-0 mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold tracking-tighter">
               Help you find the finest quality of mental health support!
             </h1>
             <p className="text-2xl mt-10">

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "/public/images/logo-dopamind.png";
+import logo from "/public/images/logo.png";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -12,15 +12,18 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="relative">
-      <div className="flex flex-row items-center justify-between px-4 md:px-8 mx-auto border-gray-100 shadow-xl border-2 p-2 rounded-full w-full md:w-2/3 my-4 md:my-8">
-        <Image
-          src={logo}
-          alt="logo"
-          height={50}
-          width={50}
-          className="shrink-0"
-        />
+    <nav className="relative md:px-0 pad-x">
+      <div className="flex flex-row items-center justify-between px-4 md:px-8 mx-auto border-gray-100 shadow-md border-2 p-2 rounded-full w-full md:w-2/3 my-4 md:my-8">
+        <div className="flex items-center gap-x-4">
+          <Image
+            src={logo}
+            alt="logo"
+            height={50}
+            width={50}
+            className="shrink-0"
+          />
+          <h1 className="font-semibold text-xl">Dopamind</h1>
+        </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex flex-row items-center justify-center space-x-8 lg:space-x-16 font-medium">
