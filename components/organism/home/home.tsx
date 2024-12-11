@@ -17,10 +17,10 @@ export default function Homepage() {
           backgroundPosition: "center",
         }}
       >
-        <h1 className="md:text-3xl md:px-0 text-xl font-semibold text-center md:w-2/5 tracking-wider">
+        <h1 className="text-4xl lg:text-6xl font-bold tracking-tighter max-w-xl text-center">
           “Taking care of your mental health is the best decision you can make.”
         </h1>
-        <p className="md:w-2/3 md:px-0 px-4 text-center">
+        <p className="max-w-xl text-center">
           Dopamind helps you track and enhance your mental wellbeing. Taking
           care of mental health isn&apos;t just a choice. It&apos;s an
           investment in yourself. Every step toward better mental health brings
