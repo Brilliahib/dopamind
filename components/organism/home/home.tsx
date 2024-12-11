@@ -30,20 +30,20 @@ export default function Homepage() {
           Dopamind App
         </Button>
         <div className="relative">
-          <Image src={phone} alt="phone" width={300} height={300} />
+          <Image src={phone} alt="phone" width={330} height={330} />
           <Image
             src={bubbleleft}
             alt="bubble left"
             width={200}
             height={200}
-            className="absolute bottom-20 left-[-160px] max-w-xs"
+            className="absolute bottom-20 left-[-160px] max-w-xs hidden md:block"
           />
           <Image
             src={bubbleright}
             alt="bubble right"
             width={200}
             height={200}
-            className="absolute top-20 right-[-190px]"
+            className="absolute top-20 right-[-190px] hidden md:block"
           />
         </div>
       </div>
