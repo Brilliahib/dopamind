@@ -3,7 +3,7 @@ import phonecombine from "/public/images/phone-combine.png";
 export default function Help() {
   return (
     <>
-      <div className="bg-[#C7E4DF] w-3/5 flex flex-row items-center mx-auto rounded-xl p-4">
+      <div className="bg-[#C7E4DF] bg-opacity-50 w-3/5 flex flex-row items-center mx-auto rounded-3xl p-4 my-12">
         <div>
           <h1 className="font-semibold text-5xl">
             Help you find the finest quality of mental health support!
@@ -18,8 +18,8 @@ export default function Help() {
         <Image
           src={phonecombine}
           alt="phone-combine"
-          width={250}
-          height={250}
+          width={300}
+          height={300}
         />
       </div>
     </>
