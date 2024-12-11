@@ -9,7 +9,7 @@ export default function Homepage() {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center mx-auto space-y-8 bg-cover bg-center pad-x md:min-h-0 min-h-screen"
+        className="flex flex-col items-center justify-center mx-auto space-y-8 bg-cover bg-center pad-x md:min-h-0 min-h-80vh"
         style={{
           backgroundImage: `url(${element.src})`,
           backgroundSize: "90%",
