@@ -18,11 +18,13 @@ export default function Navbar() {
           <Image
             src={logo}
             alt="logo"
-            height={50}
-            width={50}
-            className="shrink-0"
+            height={1000}
+            width={1000}
+            className="shrink-0 w-10"
           />
-          <h1 className="font-semibold text-xl">Dopamind</h1>
+          <h1 className="font-semibold md:text-xl text-base">
+            <span className="text-[#A4D4CC]">Dopa</span>mind +
+          </h1>
         </div>
 
         {/* Desktop Menu */}
