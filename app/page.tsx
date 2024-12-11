@@ -1,11 +1,9 @@
-import Help from "@/components/organism/home/help";
-import Homepage from "@/components/organism/home/home";
+import HomeWrapper from "@/components/organism/home/HomeWrapper";
 
 export default function Home() {
   return (
     <>
-      <Homepage />
-      <Help />
+      <HomeWrapper />
     </>
   );
 }

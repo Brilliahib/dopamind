@@ -9,7 +9,7 @@ export default function Homepage() {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center mx-auto space-y-8 bg-cover bg-center"
+        className="flex flex-col items-center justify-center mx-auto space-y-8 bg-cover bg-center pad-x md:min-h-0 min-h-80vh"
         style={{
           backgroundImage: `url(${element.src})`,
           backgroundSize: "90%",
@@ -17,16 +17,16 @@ export default function Homepage() {
           backgroundPosition: "center",
         }}
       >
-        <h1 className="md:text-3xl md:px-0 text-xl font-semibold text-center md:w-2/5 tracking-wider">
-          “Taking care of your mental health is the best decision you can make.”
+        <h1 className="text-5xl lg:text-6xl font-bold tracking-tighter max-w-xl text-center">
+          “Empower Your Life, Prioritize Your Mind”
         </h1>
-        <p className="md:w-2/3 md:px-0 px-4 text-center">
+        <p className="max-w-xl text-center">
           Dopamind helps you track and enhance your mental wellbeing. Taking
           care of mental health isn&apos;t just a choice. It&apos;s an
           investment in yourself. Every step toward better mental health brings
           you closer to your best self.
         </p>
-        <Button className="bg-transparent text-black border-2 border-black rounded-lg hover:text-white">
+        <Button className="bg-transparent text-black border rounded-lg hover:text-white hover:bg-green-500 border-green-500">
           Dopamind App
         </Button>
         <div className="relative">
