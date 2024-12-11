@@ -1,15 +1,9 @@
-import Diary from "@/components/organism/home/diary";
-import Features from "@/components/organism/home/features";
-import Help from "@/components/organism/home/help";
-import Homepage from "@/components/organism/home/home";
+import HomeWrapper from "@/components/organism/home/HomeWrapper";
 
 export default function Home() {
   return (
     <>
-      <Homepage />
-      <Help />
-      <Features />
-      <Diary />
+      <HomeWrapper />
     </>
   );
 }
