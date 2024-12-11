@@ -7,13 +7,30 @@ import {
 
 import Image from "next/image";
 import head from "/public/images/head.png";
+import features from "/public/images/features.png";
 
 export default function Features() {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-5xl font-semibold text-center mb-10">
+    <div
+      className="relative container rounded-md mx-auto px-4 py-12 bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${features.src})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Decorative Head Image */}
+      <div className="absolute -top-20 -left-20">
+        <Image src={head} alt="Head decoration" width={1200} height={1200} />
+      </div>
+
+      {/* Title */}
+      <h1 className="text-5xl font-semibold text-center text-white drop-shadow-md mb-10">
         What are our features?
       </h1>
+
+      {/* Feature Grid */}
       <div className="grid grid-cols-2 gap-6">
         <div className="bg-white rounded-md shadow-lg space-y-4 p-6">
           <div className="flex items-center space-x-4">
