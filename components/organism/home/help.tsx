@@ -22,14 +22,14 @@ export default function Help() {
               alt="phone-combine"
               width={1000}
               height={1000}
-              className="md:absolute w-40 lg:w-72 -rotate-12 top-8 left-20 z-10 lg:top-0"
+              className="md:absolute w-36 lg:w-72 -rotate-12 top-8 left-20 z-10 lg:top-0"
             />
             <Image
               src="/images/phone-chat.png"
               alt="phone-combine"
               width={1000}
               height={1000}
-              className="md:absolute w-40 lg:w-72 rotate-0 top-40 lg:top-28 left-44 lg:left-80"
+              className="md:absolute w-36 lg:w-72 rotate-0 top-40 lg:top-28 left-44 lg:left-80"
             />
           </div>
         </div>
