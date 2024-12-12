@@ -1,4 +1,5 @@
 import Image from "next/image";
+import hand from "/public/images/hand.png";
 
 type ProfileCardProps = {
   imageSrc: string;
@@ -24,21 +25,53 @@ const ProfileCard = ({ imageSrc, name, profession }: ProfileCardProps) => {
   );
 };
 
+const chunkArray = <T,>(array: T[], chunkSize: number): T[][] => {
+  const chunks: T[][] = [];
+  for (let i = 0; i < array.length; i += chunkSize) {
+    chunks.push(array.slice(i, i + chunkSize));
+  }
+  return chunks;
+};
+
 type ProfileGridProps = {
   profiles: Array<{ imageSrc: string; name: string; profession: string }>;
 };
 
 const ProfileGrid = ({ profiles }: ProfileGridProps) => {
+  const chunkedProfiles = chunkArray(profiles, 4);
+
   return (
-    <div className="flex flex-row gap-8 items-center justify-center bg-blue-400">
-      {profiles.map((profile, index) => (
-        <ProfileCard
-          key={index}
-          imageSrc={profile.imageSrc}
-          name={profile.name}
-          profession={profile.profession}
+    <div className="space-y-24">
+      <div className="flex items-center justify-center">
+        <Image src={hand} alt="hand" width={50} height={50} />
+        <h1 className="font-semibold text-[#32A08F] underline md:text-5xl text-xl">
+          Meet our Team
+        </h1>
+        <Image
+          className="scale-x-[-1]"
+          src={hand}
+          alt="hand"
+          width={50}
+          height={50}
         />
-      ))}
+      </div>
+      <div className="flex flex-col gap-8 items-center justify-center">
+        {chunkedProfiles.map((row, rowIndex) => (
+          <div
+            key={rowIndex}
+            className="flex md:flex-row flex-col gap-16 items-center justify-center"
+          >
+            {row.map((profile, index) => (
+              <ProfileCard
+                key={index}
+                imageSrc={profile.imageSrc}
+                name={profile.name}
+                profession={profile.profession}
+              />
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

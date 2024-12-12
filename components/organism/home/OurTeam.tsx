@@ -1,5 +1,3 @@
-import Image from "next/image";
-import hand from "/public/images/hand.png";
 import ProfileGrid from "@/components/molecules/profile/CardProfile";
 
 const profiles = [
@@ -29,7 +27,7 @@ const profiles = [
     profession: "Cloud Computing",
   },
   {
-    imageSrc: "/images/fino.jpg",
+    imageSrc: "/images/logo.png",
     name: "Namira Nurfaliani",
     profession: "Mobile Development",
   },
@@ -43,19 +41,6 @@ const profiles = [
 export default function OurTeam() {
   return (
     <>
-      <div className="flex items-center justify-center gap-4">
-        <Image src={hand} alt="hand" width={60} height={60} />
-        <h1 className="font-semibold text-[#32A08F] underline md:text-5xl text-xl">
-          Meet our Team
-        </h1>
-        <Image
-          className="scale-x-[-1]"
-          src={hand}
-          alt="hand"
-          width={60}
-          height={60}
-        />
-      </div>
       <ProfileGrid profiles={profiles} />
     </>
   );
