@@ -3,6 +3,7 @@ import Features from "@/components/organism/home/features";
 import Help from "@/components/organism/home/help";
 import Homepage from "@/components/organism/home/home";
 import HomeFooter from "./HomeFooter";
+import OurTeam from "./OurTeam";
 
 export default function HomeWrapper() {
   return (
@@ -12,6 +13,7 @@ export default function HomeWrapper() {
         <Help />
         <Features />
         <Diary />
+        <OurTeam />
         <HomeFooter />
       </div>
     </>
