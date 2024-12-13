@@ -27,7 +27,7 @@ const profiles = [
     profession: "Cloud Computing",
   },
   {
-    imageSrc: "/images/logo.png",
+    imageSrc: "/images/namira.jpeg",
     name: "Namira Nurfaliani",
     profession: "Mobile Development",
   },
