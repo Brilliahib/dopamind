@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"; 
 import phone from "/public/images/phone.png";
 import { Button } from "@/components/ui/button";
 import element from "/public/images/element.png";
@@ -26,9 +27,14 @@ export default function Homepage() {
           investment in yourself. Every step toward better mental health brings
           you closer to your best self.
         </p>
-        <Button className="bg-transparent text-black border rounded-lg hover:text-white hover:bg-green-500 border-green-500">
-          Dopamind App
-        </Button>
+        <Link
+          href="https://drive.google.com/drive/folders/1WUCbrZ288jfrRRhevS2PnrI1u0TCNgLY?usp=sharing"
+          passHref
+        >
+          <Button className="bg-transparent text-black border rounded-lg hover:text-white hover:bg-green-500 border-green-500">
+            Dopamind App
+          </Button>
+        </Link>
         <div className="relative">
           <Image src={phone} alt="phone" width={330} height={330} />
           <Image
